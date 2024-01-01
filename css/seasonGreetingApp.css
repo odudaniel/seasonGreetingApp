@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: none;
+    list-style-type: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(https://wallpapers.com/images/hd/red-christmas-wreath-38hz7uowvsh29gia.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-wrapper {
+    width: 95%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+   justify-content: center;
+    border-bottom: dotted 35px red;
+}
+
+.balls {
+   
+    top: 0;
+    width: 80%;
+    align-self: end;
+    border-top: dotted 35px red;
+    position: absolute;   
+}
+
+.main-wrapper::before {
+    left: 0;
+    width: 90%;
+    height: 95vh;
+    content: "";
+    border-left: dotted 35px red;
+    animation: animate 6s ease-in-out .3s infinite alternate-reverse;
+    position: absolute;
+}
+
+.main-wrapper::after {
+    right: 0;
+    width: 90%;
+    height: 95vh;
+    content: "";
+    border-right: dotted 35px red;
+    position: absolute;
+    animation: animate 6s ease-in-out .6s infinite alternate;;
+}
+
+@keyframes animate {
+    0% {transform: translateY(0px);}
+
+    100%{transform: translateY(-100%)} 
+}
+
+
+.container {
+    color: aliceblue;
+    width: 85%;
+    height: 70vh;
+    padding: 2em 1.1em;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #ffffff34;
+    /* box-shadow: .1em 0px 15px red ; */
+}
+
+h1  {
+    font-size: 1.2rem;
+    font-weight: bold;
+} 
+
+.bold {
+    font-size: 1.4rem;
+}
+
+
+.emoji {
+    font-size: 25px;;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+    padding: .5em .6em;
+}
+
+input[type=submit] {
+   cursor: pointer;
+   padding: .5em .6em;
+}
+  
+
+
+
+
